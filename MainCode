@@ -1,0 +1,86 @@
+import java.util.Random;
+import java.util.Scanner;
+
+
+/**
+ *
+ * @author newuser
+ */
+public class GiftAdvisor {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    
+        int option;
+        String gender, PriceRange;
+        Random rand = new Random();
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("What is the gift receipent's gender?");
+        gender = scanner.next();
+        
+        System.out.println("What is the price range for the gift (Please enter 'Low', ' Medium', or 'High')?");
+        PriceRange = scanner.next();
+        
+        if(gender == "male") {
+            if (PriceRange == "low") {
+                option = rand.nextInt(2)+1;
+                if (option == 1) {
+                    System.out.println("Suggested gift: Books");
+                }
+                else {
+                    System.out.println("Suggested gift: Shoes");
+                }
+            }
+            if (PriceRange == "medium") {
+                option = rand.nextInt(2)+1;
+                if (option == 1) {
+                    System.out.println("Suggested gift: Guitar");
+                }
+                else {
+                    System.out.println("Suggested gift: Playstation");
+                }
+            }
+                if (PriceRange == "high") {
+                option = rand.nextInt(2)+1;
+                if (option == 1) {
+                    System.out.println("Suggested gift: Smart TV");
+                }
+                else {
+                    System.out.println("Suggested gift: Apple Watch");
+                }
+        }
+            }
+      else {
+                   if (PriceRange == "low") {
+                option = rand.nextInt(2)+1;
+                if (option == 1) {
+                    System.out.println("Suggested gift: Wine");
+                }
+                else {
+                    System.out.println("Suggested gift: Selfie Stick");
+                }
+            }
+            if (PriceRange == "medium") {
+                option = rand.nextInt(2)+1;
+                if (option == 1) {
+                    System.out.println("Suggested gift: Perfume");
+                }
+                else {
+                    System.out.println("Suggested gift: Sweater");
+                }
+            }
+                if (PriceRange == "high") {
+                option = rand.nextInt(2)+1;
+                if (option == 1) {
+                    System.out.println("Suggested gift: Jewelry");
+                }
+                else {
+                    System.out.println("Suggested gift: Weekend Getaway");
+                } 
+                }
+            }  
+    }       
+                
